@@ -53,6 +53,7 @@ header {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+  background-repeat: no-repeat;
   background-image: url(assets/header-bg-img/Group\ 327.png);
 }
 header .header-conts {
@@ -65,12 +66,27 @@ header .header-conts {
 header .header-conts .desciption h1 {
   font-size: clamp(33px, 10vw, 90px);
 }
+header .header-conts .desciption p {
+  font-size: 18px;
+  max-width: 600px;
+  margin: 30px 0;
+}
+header .header-conts .desciption button {
+  padding: 14px 12px;
+  border: none;
+  font-weight: 600;
+  border-radius: 20px;
+  background: linear-gradient(90deg, rgb(8, 0, 255) 0%, rgb(255, 158, 0) 100%);
+  color: #fff;
+  font-size: 22px;
+}
 header .header-conts .header-hero-img #fancy-hero-shape {
   width: 400px;
   height: 400px;
   background-image: linear-gradient(90deg, rgb(255, 158, 0) 0%, rgb(255, 38, 0) 100%);
   border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
   animation: infinite 20s fancyHeroShape;
+  transition: 0.3s all cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 @keyframes fancyHeroShape {
   0% {
