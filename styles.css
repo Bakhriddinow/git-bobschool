@@ -14,6 +14,7 @@ body {
 }
 
 nav {
+  z-index: 100;
   position: fixed;
   width: 100%;
   height: 80px;
@@ -79,6 +80,7 @@ header .header-conts .desciption button {
   background: linear-gradient(90deg, rgb(8, 0, 255) 0%, rgb(255, 158, 0) 100%);
   color: #fff;
   font-size: 22px;
+  margin: 10px;
 }
 header .header-conts .header-hero-img #fancy-hero-shape {
   width: 400px;
