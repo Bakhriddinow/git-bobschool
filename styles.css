@@ -47,7 +47,7 @@ nav button {
 
 header {
   width: 100%;
-  height: 120vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -124,6 +124,57 @@ header .header-conts .header-hero-img #fancy-hero-shape {
   100% {
     border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
   }
+}
+
+main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main #advantages-sec {
+  width: inherit;
+  height: auto;
+  display: flex;
+  flex-direction: inherit;
+  justify-content: center;
+  align-items: center;
+}
+main #advantages-sec #title {
+  font-size: 48px;
+}
+main #advantages-sec #advantage-container {
+  padding-top: 60px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+main #advantages-sec #advantage-container #adv-content {
+  width: 400px;
+  height: 200px;
+  padding: 22px;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px;
+  border-radius: 30px;
+}
+main #advantages-sec #advantage-container #adv-content img {
+  width: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main #advantages-sec #advantage-container #adv-content:nth-child(1) {
+  background: linear-gradient(135deg, #f7cf31, #ff7e5f, #feb47b);
+}
+main #advantages-sec #advantage-container #adv-content:nth-child(2) {
+  background: linear-gradient(135deg, #f7cf31, #1c92d2, #f2fcfe);
+}
+main #advantages-sec #advantage-container #adv-content:nth-child(3) {
+  background: linear-gradient(135deg, #f7cf31, #e17055, #d63031);
+}
+main #advantages-sec #advantage-container #adv-content:nth-child(4) {
+  background: linear-gradient(135deg, #f7cf31, #e17055, #d63031);
 }
 
 @media screen and (max-width: 660px) {
