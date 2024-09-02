@@ -51,7 +51,7 @@ header {
   height: 120vh;
   display: flex;
   justify-content: space-around;
-  padding: 10px;
+  padding: 40px 10px;
   flex-wrap: wrap;
   align-items: center;
   background-image: url(assets/header-bg-img/Group\ 327.png);
