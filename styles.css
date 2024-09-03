@@ -21,7 +21,7 @@ body {
   height: 100vh;
   background: #f7cf31;
   overflow-x: hidden;
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
 }
 
 nav {
@@ -64,7 +64,7 @@ nav #menu {
 
 header {
   max-width: 100%;
-  height: 120vh;
+  height: 100vh;
   display: flex;
   justify-content: space-around;
   padding: 40px 10px;
@@ -175,10 +175,11 @@ main #advantages-part #advanteges-container #contents {
   padding: 12px;
   display: inherit;
   transition: 0.3s all cubic-bezier(0.075, 0.82, 0.165, 1);
+  scale: 0.9;
 }
 main #advantages-part #advanteges-container #contents:hover {
+  scale: 1;
   color: #fff;
-  transform: scale(1.2);
 }
 main #advantages-part #advanteges-container #contents #contents:nth-child(1):hover {
   background: linear-gradient(70.8deg, rgb(253, 70, 90) 24%, rgb(31, 42, 147) 92.4%);
@@ -247,32 +248,43 @@ main #teachers-part #container-of-tr #teachers a {
   top: 30px;
   border-radius: 22px;
 }
+main #contact {
+  width: inherit;
+  height: 100vh;
+}
 
 @media screen and (max-width: 660px) {
+  nav {
+    padding: 0;
+  }
   nav #nav-res {
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
     transition: 0.2s all ease-in;
     position: fixed;
     top: 0;
     left: -100%;
-    padding: 100px 0;
+    padding-top: 100px;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 100vh;
-    -webkit-backdrop-filter: blur(10px);
-            backdrop-filter: blur(10px);
     height: 100%;
     z-index: 110;
   }
+  nav #nav-res.active {
+    left: 0;
+  }
   nav #nav-res li {
+    width: 90%;
     margin: 5px;
     padding: 20px;
     border-radius: 20px;
-    width: 90%;
     background-color: rgba(255, 255, 255, 0.5058823529);
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     text-align: center;
   }
   nav #nav-res li a {
+    padding: 0;
     color: #fff;
   }
   nav #menu {
@@ -288,5 +300,14 @@ main #teachers-part #container-of-tr #teachers a {
   }
   header #hero #fancy-hero-shape img {
     width: inherit;
+  }
+  main #advantages-part #advanteges-container {
+    flex-wrap: nowrap;
+    overflow: scroll;
+  }
+  main #advantages-part #advanteges-container #contents {
+    width: 400px;
+    height: auto;
+    flex-direction: column;
   }
 }/*# sourceMappingURL=styles.css.map */
