@@ -18,8 +18,8 @@
       />
       <ul id="nav-res">
         <li><a href="#">Teachers</a></li>
-        <li><a href="#">Cources</a></li>
-        <li><a href="#">Branches</a></li>
+        <li><a href="#cources">Cources</a></li>
+        <li><a href="#branches">Branches</a></li>
         <li><a href="#contact">Contact US</a></li>
       </ul>
       <button id="menu">Menu</button>
@@ -43,34 +43,60 @@
       </div>
     </header>
     <main>
-      
+
+ 
       <div id="branches">
         <h2 id="title">Our Branches</h2>
         <div class="branch-cont">
           <div id="branch">
-            
-            <button><a href="https://maps.app.goo.gl/zevTFFhU38FtxVus9">See Location</a></button>
+            <button>
+              <img src="assets/main/branch/button-ico.png" alt="" />
+              <a href="https://maps.app.goo.gl/zevTFFhU38FtxVus9" target="_blank">
+                 See Location</a
+              >
+            </button>
           </div>
           <div id="branch">
-            
-             <button><a href="https://maps.app.goo.gl/zevTFFhU38FtxVus9">See Location</a></button>
-           </div>
+            <button>
+              <img src="assets/main/branch/button-ico.png" alt="" />
+              <a href="https://maps.app.goo.gl/zevTFFhU38FtxVus9" target="_blank">
+                 See Location</a
+              >
+            </button>
+          </div>
         </div>
       </div>
-
+      <div id="cources">
+        <h2 id="title">Our Cources</h2>
+        
+      </div>
       <div id="contact">
         <div class="info">
           <h1>
-            Want to learn English? <br> Welcome to BobSchool
+            Want to learn English? <br />
+            Welcome to BobSchool
           </h1>
         </div>
         <form action="https://api.web3forms.com/submit" method="POST">
+          <input
+            type="hidden"
+            name="access_key"
+            value="9252bd18-f49e-48d0-a6a1-74b6fa6742c8"
+          />
 
-          <input type="hidden" name="access_key" value="9252bd18-f49e-48d0-a6a1-74b6fa6742c8">
-
-          <input type="text" placeholder="Please Enter Your Name" name="name" required>
-          <input type="number" placeholder="enter your phone number" name="phoneNumber" required>
-          <select  id="fields" name="fields">
+          <input
+            type="text"
+            placeholder="Please Enter Your Name"
+            name="name"
+            required
+          />
+          <input
+            type="number"
+            placeholder="enter your phone number"
+            name="phoneNumber"
+            required
+          />
+          <select id="fields" name="fields">
             <option value="Beginner">Beginner</option>
             <option value="Intermetide">Intermetide</option>
             <option value="upper-Intermetide">Upper-Intermetide</option>

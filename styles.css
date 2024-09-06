@@ -159,6 +159,7 @@ main {
 }
 main #title {
   font-size: clamp(22px, 4vw, 42px);
+  text-align: center;
 }
 main #branches {
   width: inherit;
@@ -191,6 +192,10 @@ main #branches .branch-cont #branch button {
   right: 27px;
   bottom: 27px;
   padding: 22px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 main #contact {
   flex-wrap: wrap;
