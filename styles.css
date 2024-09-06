@@ -163,7 +163,7 @@ main #title {
 }
 main #branches {
   width: inherit;
-  height: 80vh;
+  height: 100vh;
   text-align: center;
 }
 main #branches .branch-cont {
@@ -254,7 +254,7 @@ main #cources .cource-container #cource p {
 main #contact {
   flex-wrap: wrap;
   width: inherit;
-  height: 80vh;
+  height: 100vh;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
